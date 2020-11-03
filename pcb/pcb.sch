@@ -1,0 +1,432 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NUCLEO_L432KC:NUCLEO_L432KC L432KC?
+U 1 1 5F98491B
+P 5450 3100
+F 0 "L432KC?" H 5850 3365 50  0000 C CNN
+F 1 "NUCLEO_L432KC" H 5850 3274 50  0000 C CNN
+F 2 "" H 5800 3350 50  0001 C CNN
+F 3 "" H 5800 3350 50  0001 C CNN
+	1    5450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3200 7050 3200
+$Comp
+L power:GND #PWR0101
+U 1 1 5F985B96
+P 7050 3300
+F 0 "#PWR0101" H 7050 3050 50  0001 C CNN
+F 1 "GND" H 7055 3127 50  0000 C CNN
+F 2 "" H 7050 3300 50  0001 C CNN
+F 3 "" H 7050 3300 50  0001 C CNN
+	1    7050 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3200 7050 3300
+$Comp
+L DS18B20Z+T&R:DS18B20Z+T&R IC?
+U 1 1 5F98DE86
+P 2250 5950
+F 0 "IC?" H 2900 6215 50  0000 C CNN
+F 1 "DS18B20Z+T&R" H 2900 6124 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 3400 6050 50  0001 L CNN
+F 3 "https://datasheet.datasheetarchive.com/originals/dk/DKDS-25/482711.pdf" H 3400 5950 50  0001 L CNN
+F 4 "Board Mount Temperature Sensors Programmable Resolution 1-Wire Digital Thermometer" H 3400 5850 50  0001 L CNN "Description"
+F 5 "1.75" H 3400 5750 50  0001 L CNN "Height"
+F 6 "Maxim Integrated" H 3400 5650 50  0001 L CNN "Manufacturer_Name"
+F 7 "DS18B20Z+T&R" H 3400 5550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3400 5450 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 3400 5350 50  0001 L CNN "Arrow Price/Stock"
+F 10 "700-DS18B20ZT&R" H 3400 5250 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/DS18B20Z%2bTR?qs=7H2Jq%252ByxpJL5ubjQbuN2jA%3D%3D" H 3400 5150 50  0001 L CNN "Mouser Price/Stock"
+	1    2250 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4500 5050 4500
+Text Label 5050 4500 0    50   ~ 0
+D12
+$Comp
+L power:GND #PWR0102
+U 1 1 5F991F90
+P 3750 6350
+F 0 "#PWR0102" H 3750 6100 50  0001 C CNN
+F 1 "GND" H 3755 6177 50  0000 C CNN
+F 2 "" H 3750 6350 50  0001 C CNN
+F 3 "" H 3750 6350 50  0001 C CNN
+	1    3750 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 6250 3750 6250
+Wire Wire Line
+	3750 6250 3750 6350
+$Comp
+L Device:R R?
+U 1 1 5F9928E6
+P 1900 6250
+F 0 "R?" V 1700 6200 50  0000 L CNN
+F 1 "4.7k" V 1800 6200 50  0000 L CNN
+F 2 "" V 1830 6250 50  0001 C CNN
+F 3 "~" H 1900 6250 50  0001 C CNN
+	1    1900 6250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 6250 2150 6250
+Connection ~ 2150 6250
+Wire Wire Line
+	2150 6250 2050 6250
+Wire Wire Line
+	2150 6650 1150 6650
+Wire Wire Line
+	2150 6250 2150 6650
+Text Label 1150 6650 0    50   ~ 0
+D12
+Wire Wire Line
+	2250 6150 1600 6150
+Text Label 1150 6150 0    50   ~ 0
++3V3
+Wire Wire Line
+	1750 6250 1600 6250
+Wire Wire Line
+	1600 6250 1600 6150
+Connection ~ 1600 6150
+Wire Wire Line
+	1600 6150 1150 6150
+Wire Notes Line
+	1000 5600 3950 5600
+Wire Notes Line
+	3950 5600 3950 6850
+Wire Notes Line
+	3950 6850 1000 6850
+Wire Notes Line
+	1000 6850 1000 5600
+Text Notes 1950 5500 0    50   ~ 0
+Sonde température DS18B20
+$Comp
+L DHT22:DHT22 IC?
+U 1 1 5F99F418
+P 5150 5950
+F 0 "IC?" H 5878 5846 50  0000 L CNN
+F 1 "DHT22" H 5878 5755 50  0000 L CNN
+F 2 "DHT22" H 5900 6050 50  0001 L CNN
+F 3 "https://datasheet4u.com/datasheet-parts/DHT22-datasheet.php?id=792211" H 5900 5950 50  0001 L CNN
+F 4 "Digital-output relative humidity & temperature sensor/module DHT22" H 5900 5850 50  0001 L CNN "Description"
+F 5 "25.1" H 5900 5750 50  0001 L CNN "Height"
+F 6 "Aosong Electronics" H 5900 5650 50  0001 L CNN "Manufacturer_Name"
+F 7 "DHT22" H 5900 5550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 5900 5450 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 5900 5350 50  0001 L CNN "Arrow Price/Stock"
+F 10 "" H 5900 5250 50  0001 L CNN "Mouser Part Number"
+F 11 "" H 5900 5150 50  0001 L CNN "Mouser Price/Stock"
+	1    5150 5950
+	1    0    0    -1  
+$EndComp
+Text Label 4600 6050 0    50   ~ 0
+D4
+Wire Wire Line
+	5150 6250 4850 6250
+Wire Wire Line
+	4850 6250 4850 6350
+$Comp
+L power:GND #PWR0103
+U 1 1 5F9A0972
+P 4850 6350
+F 0 "#PWR0103" H 4850 6100 50  0001 C CNN
+F 1 "GND" H 4855 6177 50  0000 C CNN
+F 2 "" H 4850 6350 50  0001 C CNN
+F 3 "" H 4850 6350 50  0001 C CNN
+	1    4850 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3700 5050 3700
+Text Label 5050 3700 0    50   ~ 0
+D4
+Wire Notes Line
+	4550 5600 6300 5600
+Wire Notes Line
+	6300 5600 6300 6850
+Wire Notes Line
+	6300 6850 4550 6850
+Wire Notes Line
+	4550 6850 4550 5600
+Text Notes 4500 5500 0    50   ~ 0
+Sonde température et humidité extérieure DHT22
+$Comp
+L Connector:AudioJack3 J?
+U 1 1 5FA07097
+P 8100 5300
+F 0 "J?" H 7821 5233 50  0000 R CNN
+F 1 "AudioJack3" H 7821 5324 50  0000 R CNN
+F 2 "" H 8100 5300 50  0001 C CNN
+F 3 "~" H 8100 5300 50  0001 C CNN
+	1    8100 5300
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Audio:LM386 U?
+U 1 1 5FA08727
+P 9050 5300
+F 0 "U?" H 9394 5346 50  0000 L CNN
+F 1 "LM386" H 9394 5255 50  0000 L CNN
+F 2 "" H 9150 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 9250 5500 50  0001 C CNN
+	1    9050 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 5200 8750 5200
+Wire Wire Line
+	8300 5400 8750 5400
+$Comp
+L power:GND #PWR0104
+U 1 1 5FA0F23A
+P 8950 5600
+F 0 "#PWR0104" H 8950 5350 50  0001 C CNN
+F 1 "GND" H 8955 5427 50  0000 C CNN
+F 2 "" H 8950 5600 50  0001 C CNN
+F 3 "" H 8950 5600 50  0001 C CNN
+	1    8950 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 5000 8950 4950
+Wire Wire Line
+	8950 4950 8700 4950
+Text Label 8700 4950 0    50   ~ 0
++5V
+Text Label 6500 3400 0    50   ~ 0
++5V
+Text Label 6450 4400 0    50   ~ 0
++3V3
+Wire Wire Line
+	9350 5300 9800 5300
+Wire Wire Line
+	6350 4200 6650 4200
+Wire Wire Line
+	6350 4400 6650 4400
+Wire Wire Line
+	6350 3400 6650 3400
+Text Label 6550 4200 0    50   ~ 0
+A0
+Text Label 9700 5300 0    50   ~ 0
+A0
+Wire Notes Line
+	7250 4800 10050 4800
+Wire Notes Line
+	10050 4800 10050 5850
+Wire Notes Line
+	10050 5850 7250 5850
+Text Notes 8350 4750 0    50   ~ 0
+Capteur de son
+NoConn ~ 8300 5300
+NoConn ~ 3550 6150
+NoConn ~ 3550 6050
+NoConn ~ 3550 5950
+NoConn ~ 2250 6050
+NoConn ~ 2250 5950
+$Comp
+L Conn_PHP2:Conn_PHP2 J?
+U 1 1 5FA40DE7
+P 1100 1800
+F 0 "J?" H 1180 1792 50  0000 L CNN
+F 1 "V_BAT" H 1180 1701 50  0000 L CNN
+F 2 "" H 1100 1800 50  0001 C CNN
+F 3 "~" H 1100 1800 50  0001 C CNN
+	1    1100 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5FA4DD4A
+P 1300 1900
+F 0 "#PWR0105" H 1300 1650 50  0001 C CNN
+F 1 "GND" H 1305 1727 50  0000 C CNN
+F 2 "" H 1300 1900 50  0001 C CNN
+F 3 "" H 1300 1900 50  0001 C CNN
+	1    1300 1900
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	7250 5850 7250 4800
+Wire Wire Line
+	6350 4100 6650 4100
+Wire Wire Line
+	5350 3600 5050 3600
+Text Label 6500 4100 0    50   ~ 0
+Girouette
+Text Label 4800 3600 0    50   ~ 0
+Anemometre
+$Comp
+L Connector:4P4C J?
+U 1 1 5FA2B8D0
+P 10550 1300
+F 0 "J?" H 10220 1396 50  0000 R CNN
+F 1 "4P4C" H 10220 1305 50  0000 R CNN
+F 2 "" V 10550 1350 50  0001 C CNN
+F 3 "~" V 10550 1350 50  0001 C CNN
+	1    10550 1300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1200 9700 1200
+Text Label 9400 1200 0    50   ~ 0
+A1
+$Comp
+L Device:R R?
+U 1 1 5FA320D9
+P 9700 1050
+F 0 "R?" H 9770 1096 50  0000 L CNN
+F 1 "10k" H 9770 1005 50  0000 L CNN
+F 2 "" V 9630 1050 50  0001 C CNN
+F 3 "~" H 9700 1050 50  0001 C CNN
+	1    9700 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 9700 1200
+Wire Wire Line
+	9700 1200 10150 1200
+Wire Wire Line
+	9700 900  9400 900 
+$Comp
+L power:GND #PWR0107
+U 1 1 5FA33552
+P 10000 1050
+F 0 "#PWR0107" H 10000 800 50  0001 C CNN
+F 1 "GND" H 10005 877 50  0000 C CNN
+F 2 "" H 10000 1050 50  0001 C CNN
+F 3 "" H 10000 1050 50  0001 C CNN
+	1    10000 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 1100 10150 1050
+Wire Wire Line
+	10150 1050 10000 1050
+$Comp
+L power:GND #PWR0108
+U 1 1 5FA34634
+P 10000 1300
+F 0 "#PWR0108" H 10000 1050 50  0001 C CNN
+F 1 "GND" H 10005 1127 50  0000 C CNN
+F 2 "" H 10000 1300 50  0001 C CNN
+F 3 "" H 10000 1300 50  0001 C CNN
+	1    10000 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 1300 10150 1300
+Wire Wire Line
+	10150 1400 10150 1600
+Wire Wire Line
+	10150 1600 9700 1600
+Text Label 9400 1600 0    50   ~ 0
+D3
+$Comp
+L Device:R R?
+U 1 1 5FA36561
+P 9700 1750
+F 0 "R?" H 9770 1796 50  0000 L CNN
+F 1 "10k" H 9770 1705 50  0000 L CNN
+F 2 "" V 9630 1750 50  0001 C CNN
+F 3 "~" H 9700 1750 50  0001 C CNN
+	1    9700 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 9700 1600
+Wire Wire Line
+	9700 1600 9400 1600
+Wire Wire Line
+	9700 1900 9400 1900
+Wire Notes Line
+	9250 750  11100 750 
+Wire Notes Line
+	11100 750  11100 2100
+Wire Notes Line
+	11100 2100 9250 2100
+Wire Notes Line
+	9250 2100 9250 750 
+Text Notes 9750 700  0    50   ~ 0
+Girouette et anémomètre
+$Comp
+L Device:R R?
+U 1 1 5FA410B7
+P 4950 5900
+F 0 "R?" H 5020 5946 50  0000 L CNN
+F 1 "1k" H 5020 5855 50  0000 L CNN
+F 2 "" V 4880 5900 50  0001 C CNN
+F 3 "~" H 4950 5900 50  0001 C CNN
+	1    4950 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 6050 5150 6050
+Wire Wire Line
+	4950 6050 4600 6050
+Connection ~ 4950 6050
+Wire Wire Line
+	5150 5950 5150 5750
+Wire Wire Line
+	5150 5750 4950 5750
+Wire Wire Line
+	4950 5750 4600 5750
+Connection ~ 4950 5750
+Text Label 4600 5750 0    50   ~ 0
++3V3
+Text Label 9400 900  0    50   ~ 0
++5V
+Text Label 9400 1900 0    50   ~ 0
++5V
+Wire Wire Line
+	1300 1800 1500 1800
+Wire Wire Line
+	6350 3500 6650 3500
+Text Label 6550 3500 0    50   ~ 0
+A7
+Text Label 1400 1800 0    50   ~ 0
+A7
+$Comp
+L Conn_PHP2:Conn_PHP2 J?
+U 1 1 5FA63282
+P 1100 2350
+F 0 "J?" H 1180 2342 50  0000 L CNN
+F 1 "LIPO_OUT" H 1180 2251 50  0000 L CNN
+F 2 "" H 1100 2350 50  0001 C CNN
+F 3 "~" H 1100 2350 50  0001 C CNN
+	1    1100 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA637A2
+P 1300 2450
+F 0 "#PWR?" H 1300 2200 50  0001 C CNN
+F 1 "GND" H 1305 2277 50  0000 C CNN
+F 2 "" H 1300 2450 50  0001 C CNN
+F 3 "" H 1300 2450 50  0001 C CNN
+	1    1300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2350 1500 2350
+Text Label 1350 2350 0    50   ~ 0
++5V
+$EndSCHEMATC
