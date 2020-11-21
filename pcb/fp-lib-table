@@ -9,4 +9,5 @@
   (lib (name Connector_Audio)(type KiCad)(uri /home/clement/Cours/S3/PROJET_EMBARQUE/PCB/librairie/Connector_Audio.pretty)(options "")(descr ""))
   (lib (name LM386N-4_NOPB)(type KiCad)(uri /home/clement/Cours/S3/PROJET_EMBARQUE/PCB/librairie/LM386N-4_NOPB)(options "")(descr ""))
   (lib (name kicad-footprints-master)(type KiCad)(uri ${KICAD_SYMBOL_DIR}/kicad-footprints-master)(options "")(descr ""))
+  (lib (name WSSFM10R1AT)(type KiCad)(uri /home/clement/Cours/S3/PROJET_EMBARQUE/PCB/librairie/WSSFM10R1AT)(options "")(descr ""))
 )

@@ -7,4 +7,5 @@
   (lib (name PMIC-CN3065_DFN8_)(type Legacy)(uri /home/clement/Cours/S3/PROJET_EMBARQUE/PCB/librairie/PMIC-CN3065_DFN8_/PMIC-CN3065_DFN8_.lib)(options "")(descr ""))
   (lib (name PH2-0_2P)(type Legacy)(uri /home/clement/Cours/S3/PROJET_EMBARQUE/PCB/librairie/PH2-0_2P/PH2-0_2P.lib)(options "")(descr ""))
   (lib (name Conn_PHP2)(type Legacy)(uri /home/clement/Cours/S3/PROJET_EMBARQUE/PCB/librairie/Conn_PHP2/Conn_PHP2.lib)(options "")(descr ""))
+  (lib (name WSSFM10R1AT)(type Legacy)(uri /home/clement/Cours/S3/PROJET_EMBARQUE/PCB/librairie/WSSFM10R1AT/WSSFM10R1AT.lib)(options "")(descr ""))
 )
