@@ -154,43 +154,10 @@ Wire Notes Line
 	4450 1850 4450 800 
 Text Notes 5350 750  0    50   ~ 0
 Capteur de poids
-$Comp
-L Connector_Generic:Conn_01x04 J5
-U 1 1 5FB2C9F7
-P 6300 1250
-F 0 "J5" H 6380 1242 50  0000 L CNN
-F 1 "HX711" H 6380 1151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6300 1250 50  0001 C CNN
-F 3 "~" H 6300 1250 50  0001 C CNN
-	1    6300 1250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6100 1150 5800 1150
-Wire Wire Line
-	6100 1350 5800 1350
+	6300 1350 6000 1350
 Text Label 5800 1150 0    50   ~ 0
 +3V3
-Text Label 5800 1350 0    50   ~ 0
-A2
-Wire Wire Line
-	5700 1250 5700 1450
-Wire Wire Line
-	5700 1250 6100 1250
-Wire Wire Line
-	5700 1450 6100 1450
-$Comp
-L power:GND #PWR0102
-U 1 1 5FB34119
-P 5700 1450
-F 0 "#PWR0102" H 5700 1200 50  0001 C CNN
-F 1 "GND" H 5705 1277 50  0000 C CNN
-F 2 "" H 5700 1450 50  0001 C CNN
-F 3 "" H 5700 1450 50  0001 C CNN
-	1    5700 1450
-	1    0    0    -1  
-$EndComp
-Connection ~ 5700 1450
 Wire Wire Line
 	6350 4000 6650 4000
 Text Label 6650 4000 0    50   ~ 0
@@ -794,4 +761,41 @@ F 3 "" H 8150 5650 50  0001 C CNN
 	1    8150 5650
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J5
+U 1 1 5FCC2112
+P 6500 1350
+F 0 "J5" H 6580 1392 50  0000 L CNN
+F 1 "Conn_01x05" H 6580 1301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6500 1350 50  0001 C CNN
+F 3 "~" H 6500 1350 50  0001 C CNN
+	1    6500 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1150 6300 1150
+Wire Wire Line
+	6300 1450 6000 1450
+$Comp
+L power:GND #PWR0102
+U 1 1 5FCCD986
+P 6300 1550
+F 0 "#PWR0102" H 6300 1300 50  0001 C CNN
+F 1 "GND" H 6305 1377 50  0000 C CNN
+F 2 "" H 6300 1550 50  0001 C CNN
+F 3 "" H 6300 1550 50  0001 C CNN
+	1    6300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1250 6300 1150
+Connection ~ 6300 1150
+Wire Wire Line
+	6350 4100 6650 4100
+Text Label 6650 4100 0    50   ~ 0
+A1
+Text Label 6000 1350 0    50   ~ 0
+A1
+Text Label 6000 1450 0    50   ~ 0
+A2
 $EndSCHEMATC
