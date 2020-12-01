@@ -309,7 +309,6 @@ F 3 "~" H 8450 5250 50  0001 C CNN
 	1    8450 5250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8150 5650
 Wire Wire Line
 	8150 5550 8450 5550
 Wire Wire Line
@@ -784,4 +783,15 @@ Text Label 4750 2750 2    50   ~ 0
 +3V3
 Text Label 4750 2550 2    50   ~ 0
 +5V
+$Comp
+L power:GND #PWR?
+U 1 1 5FBD517C
+P 8150 5650
+F 0 "#PWR?" H 8150 5400 50  0001 C CNN
+F 1 "GND" H 8155 5477 50  0000 C CNN
+F 2 "" H 8150 5650 50  0001 C CNN
+F 3 "" H 8150 5650 50  0001 C CNN
+	1    8150 5650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
