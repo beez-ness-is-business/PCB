@@ -40,9 +40,7 @@ $EndComp
 Wire Wire Line
 	7050 3200 7050 3300
 Wire Wire Line
-	5350 4500 5050 4500
-Text Label 5050 4500 0    50   ~ 0
-D12
+	5350 4300 5050 4300
 Wire Notes Line
 	1000 5600 3950 5600
 Wire Notes Line
@@ -158,10 +156,6 @@ Wire Wire Line
 	6300 1350 6000 1350
 Text Label 5800 1150 0    50   ~ 0
 +3V3
-Wire Wire Line
-	6350 4000 6650 4000
-Text Label 6650 4000 0    50   ~ 0
-A2
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5FB3CD71
@@ -189,8 +183,6 @@ Wire Wire Line
 	2700 6100 2350 6100
 Wire Wire Line
 	2700 6300 2350 6300
-Text Label 2350 6100 0    50   ~ 0
-D12
 Text Label 2350 6300 0    50   ~ 0
 +3V3
 $Comp
@@ -247,8 +239,6 @@ Wire Wire Line
 	10650 1600 10200 1600
 Text Label 10200 1150 0    50   ~ 0
 +5V
-Text Label 10200 950  0    50   ~ 0
-A4
 Text Label 10200 1800 0    50   ~ 0
 +5V
 Text Label 10200 1600 0    50   ~ 0
@@ -464,10 +454,6 @@ F 3 "" H 5000 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6350 3800 6650 3800
-Text Label 6650 3800 0    50   ~ 0
-A4
-Wire Wire Line
 	9500 5350 9500 5250
 Wire Wire Line
 	9500 5250 9650 5250
@@ -543,7 +529,7 @@ L Device:R R4
 U 1 1 5FBBD368
 P 1800 2100
 F 0 "R4" H 1870 2146 50  0000 L CNN
-F 1 "1K" H 1870 2055 50  0000 L CNN
+F 1 "2.2k" H 1870 2055 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2100 50  0001 C CNN
 F 3 "~" H 1800 2100 50  0001 C CNN
 	1    1800 2100
@@ -554,7 +540,7 @@ L Device:R R5
 U 1 1 5FBBD807
 P 1800 2400
 F 0 "R5" H 1870 2446 50  0000 L CNN
-F 1 "2k" H 1870 2355 50  0000 L CNN
+F 1 "3.3k" H 1870 2355 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1730 2400 50  0001 C CNN
 F 3 "~" H 1800 2400 50  0001 C CNN
 	1    1800 2400
@@ -790,12 +776,26 @@ $EndComp
 Wire Wire Line
 	6300 1250 6300 1150
 Connection ~ 6300 1150
-Wire Wire Line
-	6350 4100 6650 4100
-Text Label 6650 4100 0    50   ~ 0
-A1
-Text Label 6000 1350 0    50   ~ 0
-A1
 Text Label 6000 1450 0    50   ~ 0
-A2
+CLK
+Text Label 6000 1350 0    50   ~ 0
+DATA
+Text Label 2350 6100 0    50   ~ 0
+D10
+Text Label 5050 4300 0    50   ~ 0
+D10
+Text Label 10200 950  0    50   ~ 0
+A4
+Text Label 6650 3800 0    50   ~ 0
+A4
+Wire Wire Line
+	6350 3800 6650 3800
+Wire Wire Line
+	6350 3600 6650 3600
+Text Label 6650 3600 0    50   ~ 0
+CLK
+Wire Wire Line
+	5350 4500 5050 4500
+Text Label 5050 4500 0    50   ~ 0
+DATA
 $EndSCHEMATC
